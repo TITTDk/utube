@@ -1,0 +1,29 @@
+{
+  "name": "تـنصيب بـوت تحميل من الـيوتيوب",
+  "description": "A telegram bot To Download Youtube Files Simple and fast 🗂 ",
+  "logo": "https://telegra.ph/file/6a3b1febade2313dd0dca.jpg",
+  "keywords": [
+    "Youtube","YoutubeDownloader"
+  ],
+  "repository": "https://github.com/JMTHON-AR/Youtube",
+  "success_url": "https://t.me/ILOIOIL",
+  "website": "https://github.com/JMTHON-AR/Youtube",
+  "env": {
+        "API_ID": {"description": "هـنا ضع الأيـبي ايدي", "required": true},
+        "API_HASH": {"description": "هـنا ضع الأيبـي هاش" , "required": true},
+        "BOT_TOKEN": {"description": "هـنا ضع تـوكن البوت","required": true}
+  },
+      "buildpacks": [
+        {"url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"},
+        {"url": "heroku/python"}
+    ],
+  "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    },
+      "stack": "heroku-20"
+
+
+}
